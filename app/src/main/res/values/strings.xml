@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Button text value -->
+    <string name="submit">Submit</string>
+    <!--<string name="reset">reset</string>
+    <string name="back">back</string> -->
+
+    <!-- List of questions and their respective options -->
+    <string name="question_1"> Which of these are Server Side Programming Language</string>
+    <string name="question_1_option_A_check_box">(A) C# </string>
+    <string name="question_1_option_B_check_box">(B) Java</string>
+    <string name="question_1_option_C_check_box">(C) CSS</string>
+    <string name="question_1_option_D_check_box">(D) PHP</string>
+
+    <string name="question_2">Which of these programming language is referred to OOP Language</string>
+    <string name="question_2_option_A_radio_button">(A) Microsoft Access</string>
+    <string name="question_2_option_B_radio_button">(B) Java</string>
+    <string name="question_2_option_C_radio_button">(C) Javascript</string>
+    <string name="question_2_option_D_radio_button">(D) CSS</string>
+
+    <string name="question_3">Is Javascript a client side language?</string>
+    <string name="question_3_option_A_radio_button">(A) Yes </string>
+    <string name="question_3_option_B_radio_button">(B) No </string>
+    <string name="question_3_option_C_radio_button">(C) None of the above</string>
+    <string name="question_3_option_D_radio_button">(D) Not too sure</string>
+
+    <string name="question_4">Who is founder of Java Programming Language?</string>
+    <string name="question4_ans">james gosling</string>
+
+
+    <string name="question_5">Android Studio can be used to develop application for?</string>
+    <string name="question_5_option_A_check_box">(A) Phone</string>
+    <string name="question_5_option_B_check_box">(B) TV</string>
+    <string name="question_5_option_C_check_box">(C) System</string>
+    <string name="question_5_option_D_check_box">(D) Airplane</string>
+
+    <string name="question_6">Who created Javascript?</string>
+    <string name="question_6_option_A_radio_button">(A) Brendan Eich </string>
+    <string name="question_6_option_B_radio_button">(B) Dennis Richie </string>
+    <string name="question_6_option_C_radio_button">(C) Bill joy </string>
+    <string name="question_6_option_D_radio_button">(D) Steve Jobs</string>
+
+    <string name="question_7"> Who is the current owner of Java?</string>
+    <string name="question_7_option_A_check_box">Sun Microsystem</string>
+    <string name="question_7_option_B_check_box">Oracle</string>
+    <string name="question_7_option_C_check_box">Steven Jobs</string>
+    <string name="question_7_option_D_check_box">Billgate</string>
+
+    <string name="final_text">Your Quiz result is as follows:</string>
+    <string name="time_spent">You have spent:</string>
+
+    <string name="password">Enter your password here</string>
+    <string name="username">Enter your name here</string>
+
+    <!--message to display to user after the the quiz -->
+    <string name="question1_label">Answer - Question 1 </string>
+    <string name="question2_label">Answer - Question 2 </string>
+    <string name="question3_label">Answer - Question 3 </string>
+    <string name="question4_label">Answer - Question 4 </string>
+    <string name="question5_label">Answer - Question 5 </string>
+
+    <string name="score">You got</string>
+    <string name="outof">out of</string>
+
+    <string name="one_minute_left">1 minute to stopping time</string>
+    <string name="time_out">Time Up</string>
+    <string name="oncreate_toast_message">Please get ready. Your time start now</string>
+    <string name="user_with_no_name">I will like to know your name</string>
+
+</resources>
+
