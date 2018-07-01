@@ -15,8 +15,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             cheerMessage = getString(R.string.cheer_message_fail);
         } else cheerMessage = getString(R.string.cheer_message_pass);
 
-        finalAnswer = "Dear Awesome" + username + ",\n";
+        finalAnswer = "Dear Awesome " + username + ",\n";
         finalAnswer += "\n" + cheerMessage;
         finalAnswer += "\n" + getString(R.string.score) + " " + score + "\n";
         finalAnswer += "\n" + getString(R.string.question1_label) + "\t" + answerQuestion1;
@@ -96,6 +98,16 @@ public class MainActivity extends AppCompatActivity {
         finalAnswer += "\n" + getString(R.string.question5_label) + "\t" + answerQuestion5;
         return finalAnswer;
 
+    }
+
+    public void tryAgainButton(View view) {
+        try {
+            Intent intent = new Intent(MainActivity.this, SignIn.class);
+//        intent.putExtra("username", username);
+            startActivity(intent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -112,13 +124,18 @@ public class MainActivity extends AppCompatActivity {
         CheckBox question1_optionD = findViewById(R.id.question1_optionD_check_box);
         CheckBox question1_optionC = findViewById(R.id.question1_optionC_check_box);
 
-        //if user check the correct answer and not the incorrect answer add 1 quizScore
+        //if user check the correct answers add 1 to quizScore
         if (question1_optionA.isChecked() && question1_optionB.isChecked()
                 && question1_optionD.isChecked() && !question1_optionC.isChecked())
             quizScore = quizScore + 1;
 
-        //checks user response to question number 4
-        EditText questionFour = findViewById(R.id.question4_edit_text);
+        //accept input for question number 4
+        EditText questionFour = null;
+        try {
+            questionFour = findViewById(R.id.question4_edit_text);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         userResponse = questionFour.getText().toString().toLowerCase().trim();
 
         //if EditText is filled and answer is correct add quizScore
@@ -163,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("*/*");
         intent.putExtra(Intent.EXTRA_SUBJECT, username + ": Quiz Result");
-        intent.putExtra(Intent.EXTRA_TEXT,displayResult);
+        intent.putExtra(Intent.EXTRA_TEXT, displayResult);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
@@ -178,14 +195,27 @@ public class MainActivity extends AppCompatActivity {
     public void onRadioButtonQuestion2Clicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-        RadioGroup radioSexGroup = findViewById(R.id.radioquestion2);
+        RadioGroup radioGroupQuestion2 = findViewById(R.id.radio_question2);
 
-        // Check which radio button was clicked
+        // Check which radio button was clicked,
+        // check the answer and disable it so that cannot click it again
         switch (view.getId()) {
             case R.id.question2_optionB_radio_button:
                 if (checked) {
                     quizScore = quizScore + 1;
-                    radioSexGroup.setEnabled(false);
+                    radioGroupQuestion2.getChildAt(1).setEnabled(false);
+                }
+            case R.id.question2_optionA_radio_button:
+                if (checked) {
+                    radioGroupQuestion2.getChildAt(1).setEnabled(false);
+                }
+            case R.id.question2_optionC_radio_button:
+                if (checked) {
+                    radioGroupQuestion2.getChildAt(1).setEnabled(false);
+                }
+            case R.id.question2_optionD_radio_button:
+                if (checked) {
+                    radioGroupQuestion2.getChildAt(1).setEnabled(false);
                 }
                 break;
         }
@@ -200,17 +230,33 @@ public class MainActivity extends AppCompatActivity {
     public void onRadioButtonQuestion3Clicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
+        RadioGroup radioGroupQuestion3 = findViewById(R.id.radioquestion3);
 
         // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.question3_optionA_radio_button:
-                if (checked)
+                if (checked) {
                     quizScore = quizScore + 1;
+                    radioGroupQuestion3.getChildAt(0).setEnabled(false);
+                }
+                break;
+            case R.id.question3_optionB_radio_button:
+                if (checked) {
+                    radioGroupQuestion3.getChildAt(0).setEnabled(false);
+                }
+                break;
+            case R.id.question3_optionC_radio_button:
+                if (checked) {
+                    radioGroupQuestion3.getChildAt(0).setEnabled(false);
+                }
+                break;
+            case R.id.question3_optionD_radio_button:
+                if (checked) {
+                    radioGroupQuestion3.getChildAt(0).setEnabled(false);
+                }
                 break;
 
         }
-
-        RadioButton hss = findViewById(R.id.question3_optionA_radio_button);
 
     }
 

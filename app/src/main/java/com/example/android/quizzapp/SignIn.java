@@ -42,7 +42,7 @@ public class SignIn extends AppCompatActivity {
 
         //display a message in toast
         greeting = getString(R.string.greeting) + username + "\n" + getString(R.string.on_user_sign_in);
-        Toast toast = Toast.makeText(SignIn.this, greeting, Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(SignIn.this, greeting, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }

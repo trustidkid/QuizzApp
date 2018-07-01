@@ -31,8 +31,8 @@
     <string name="question_1_option_C_check_box">(C) CSS</string>
     <string name="question_1_option_D_check_box">(D) PHP</string>
 
-    <string name="question_2">Which of these programming language is referred to OOP Language</string>
-    <string name="question_2_option_A_radio_button">(A) Microsoft Access</string>
+    <string name="question_2">Which of these programming language is referred to as OOP Language</string>
+    <string name="question_2_option_A_radio_button">(A) Basic</string>
     <string name="question_2_option_B_radio_button">(B) Java</string>
     <string name="question_2_option_C_radio_button">(C) Javascript</string>
     <string name="question_2_option_D_radio_button">(D) CSS</string>
@@ -53,18 +53,6 @@
     <string name="question_5_option_C_check_box">(C) System</string>
     <string name="question_5_option_D_check_box">(D) Airplane</string>
 
-    <string name="question_6">Who created Javascript?</string>
-    <string name="question_6_option_A_radio_button">(A) Brendan Eich </string>
-    <string name="question_6_option_B_radio_button">(B) Dennis Richie </string>
-    <string name="question_6_option_C_radio_button">(C) Bill joy </string>
-    <string name="question_6_option_D_radio_button">(D) Steve Jobs</string>
-
-    <string name="question_7"> Who is the current owner of Java?</string>
-    <string name="question_7_option_A_check_box">Sun Microsystem</string>
-    <string name="question_7_option_B_check_box">Oracle</string>
-    <string name="question_7_option_C_check_box">Steven Jobs</string>
-    <string name="question_7_option_D_check_box">Billgate</string>
-
     <string name="final_text">Your Quiz result is as follows:</string>
     <string name="time_spent">You have spent:</string>
 
@@ -80,7 +68,7 @@
 
     <string name="score">Your Score is = </string>
 
-    <string name="one_minute_left">1 minute to stopping time</string>
+    <string name="tryagain">try again</string>
     <string name="time_up">Time Up</string>
     <string name="on_user_sign_in">Your time start now. Good luck</string>
     <string name="greeting">Hello Mr./Mrs. </string>
@@ -93,6 +81,7 @@
     <string name="no_3">3.</string>
     <string name="no_4">4.</string>
     <string name="no_5">5.</string>
+    <string name="your_answer_here">Your Answer here</string>
 
 </resources>
 
