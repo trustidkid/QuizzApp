@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quizz App</string>
+    <string name="app_name">Quiz App</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -20,6 +20,10 @@
     <!--<string name="reset">reset</string>
     <string name="back">back</string> -->
 
+    <!-- login button -->
+    <string name="start_quiz">Start</string>
+    <string name="cheer_message_fail">You score below Average. Try again.</string>
+    <string name="cheer_message_pass">Excellent performance. Keep it up.</string>
     <!-- List of questions and their respective options -->
     <string name="question_1"> Which of these are Server Side Programming Language</string>
     <string name="question_1_option_A_check_box">(A) C# </string>
@@ -68,19 +72,27 @@
     <string name="username">Enter your name here</string>
 
     <!--message to display to user after the the quiz -->
-    <string name="question1_label">Answer - Question 1 </string>
-    <string name="question2_label">Answer - Question 2 </string>
-    <string name="question3_label">Answer - Question 3 </string>
-    <string name="question4_label">Answer - Question 4 </string>
-    <string name="question5_label">Answer - Question 5 </string>
+    <string name="question1_label">Answer - Question 1 = </string>
+    <string name="question2_label">Answer - Question 2 = </string>
+    <string name="question3_label">Answer - Question 3 = </string>
+    <string name="question4_label">Answer - Question 4 = </string>
+    <string name="question5_label">Answer - Question 5 = </string>
 
-    <string name="score">You got</string>
-    <string name="outof">out of</string>
+    <string name="score">Your Score is = </string>
 
     <string name="one_minute_left">1 minute to stopping time</string>
-    <string name="time_out">Time Up</string>
-    <string name="oncreate_toast_message">Please get ready. Your time start now</string>
+    <string name="time_up">Time Up</string>
+    <string name="on_user_sign_in">Your time start now. Good luck</string>
+    <string name="greeting">Hello Mr./Mrs. </string>
     <string name="user_with_no_name">I will like to know your name</string>
+    <string name="timer">Timer:</string>
+    <string name="sign_in">Sign In</string>
+    <string name="layout_weight">1</string>
+    <string name="no_1">1.</string>
+    <string name="no_2">2.</string>
+    <string name="no_3">3.</string>
+    <string name="no_4">4.</string>
+    <string name="no_5">5.</string>
 
 </resources>
 
