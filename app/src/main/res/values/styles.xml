@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#424242</item>
         <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">##7f0000</item>
+        <item name="colorAccent">#7f0000</item>
         <item name="android:button">@color/colorAccent</item>
     </style>
     <style name="GreenText" parent="TextAppearance.AppCompat">
